@@ -33,4 +33,26 @@
         app:layout_constraintStart_toStartOf="@+id/editText_produto"
         app:layout_constraintEnd_toEndOf="@+id/editText_produto"
         />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintTop_toBottomOf="@+id/editText_preco"
+        app:layout_constraintStart_toStartOf="@+id/editText_preco"
+        app:layout_constraintEnd_toEndOf="@+id/editText_preco"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:layout_marginTop="30dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
