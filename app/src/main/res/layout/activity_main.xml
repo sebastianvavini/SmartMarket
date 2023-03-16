@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
 
-        android:hint="Produto:"
+        android:hint="Codigo de Produto:"
         app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +44,7 @@
         app:layout_constraintEnd_toEndOf="@+id/editText_preco"
         />
     <Button
+        android:id="@+id/buttonCamera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Camera"
@@ -54,5 +55,32 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView"
 
         />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@+id/buttonCamera"
+        app:layout_constraintStart_toStartOf="@+id/buttonCamera"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCamera"
+        android:id="@+id/parcelas_linear">
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Localização:"
+            android:padding="20dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
